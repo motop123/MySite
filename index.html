@@ -15,7 +15,10 @@
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+		integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous">
+		</script>
+	<script src="/js/js.js"></script>
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#36A26B">
 	<!-- Windows Phone -->
@@ -37,9 +40,20 @@
 </head>
 
 <body>
+	
 	<div class="backgroundmerge">
+		<div class="navigation-page2">
+			<ul>
+				<li><a href="#anchor1" onclick="slowScroll('#anchor1')" class="navi-page-item" id="Home">01 Home <img src="/img/white short.svg" alt=""></a></li>
+				<li><a href="#content" onclick="slowScroll('#content')" class="navi-page-item">02</a><img src="/img/white large.svg" alt=""></li>
+				<li><a href="#content-service" onclick="slowScroll('#content-service')" class="navi-page-item">03<img src="/img/white large.svg" alt=""></a>
+				</li>
+				<li><a href="#content-contact" onclick="slowScroll('#content-contact')" class="navi-page-item">04<img src="/img/white large.svg" alt=""></a>
+				</li>
+			</ul>
+		</div>
 		<header>
-			<div class="container">
+			<div class="container" id="anchor1">
 				<a href="" class="logo"><img src="img/Group.svg" alt=""></a>
 
 				<div class="hamburger-menu">
@@ -48,22 +62,25 @@
 						<span></span>
 					</label>
 					<ul class="menu__box">
-						<li><a href="" class="menu__item"><img src="img/logo2.png" alt=""></a></li>
-						<li><a href="#" class="menu__item">About</a></li>
-						<li><a href="#" class="menu__item">Sevices</a></li>
-						<li><a href="#" class="menu__item">Contact</a></li>
-
+						<li><a href="#anchor1" onclick="slowScroll('#anchor1')" class="menu__item"><img
+									src="img/logo2.png" alt=""></a></li>
+						<li><a href="#content" onclick="slowScroll('#content')" class="menu__item">About</a></li>
+						<li><a href="#content-service" onclick="slowScroll('#content-service')"
+								class="menu__item">Sevices</a></li>
+						<li><a href="#content-contact" onclick="slowScroll('#content-contact')"
+								class="menu__item">Contact</a></li>
 						<a href="#" class="btn"><img src="/img/Group 187.png" alt=""></a>
 					</ul>
 				</div>
 				<ul class="mnu_top">
-					<li><a href="#content">About</a></li>
-					<li><a href="#content-service">Sevices</a></li>
-					<li><a href="#content-contact">Contact</a></li>
+					<li><a href="#content" onclick="slowScroll('#content')" >About</a></li>
+					<li><a href="#content-service" onclick="slowScroll('#content-service')">Sevices</a></li>
+					<li><a href="#content-contact" onclick="slowScroll('#content-contact')">Contact</a></li>
 				</ul>
 			</div>
 		</header>
 		<section id="main">
+			
 			<div class="container">
 				<div class="inner">
 					<h1>Marvel Power Group </h1>
@@ -76,11 +93,24 @@
 				</div>
 			</div>
 		</section>
+		<div class="scrollmore">
+			Scroll for more
+		</div>
 	</div>
 	<section id="content">
+		<div class="navigation-page">
+			<ul>
+				<li><a href="#anchor1" onclick="slowScroll('#anchor1')" class="navi-page-item" id="Home">01 <img src="/img/black short.svg" alt=""></a></li>
+				<li><a href="#content" onclick="slowScroll('#content')" class="navi-page-item">02 About</a><img src="/img/black large.svg" alt=""></li>
+				<li><a href="#content-service" onclick="slowScroll('#content-service')" class="navi-page-item">03 <img src="/img/black short.svg" alt=""></a>
+				</li>
+				<li><a href="#content-contact" onclick="slowScroll('#content-contact')" class="navi-page-item">04 <img src="/img/black short.svg" alt=""></a>
+				</li>
+			</ul>
+		</div>
 		<div class="container">
 			<div class="inner_content">
-				<h2>About Us</h2>
+				<h2 id="anchor3">About Us</h2>
 				<div class="triangle"></div>
 				<br><br>
 				<div class="p_container">
@@ -105,8 +135,19 @@
 		</div>
 
 	</section>
-	<section id="content-service">
-		<div class="container">
+	<section id="content-service" class="anchor">
+		<div class="navigation-page">
+			<ul>
+				<li><a href="#anchor1" onclick="slowScroll('#anchor1')" class="navi-page-item" id="Home">01 <img src="/img/black short.svg" alt=""></a></li>
+				<li><a href="#content" onclick="slowScroll('#content')" class="navi-page-item">02 <img src="/img/black short.svg" alt=""></a></li>
+				<li><a href="#content-service" onclick="slowScroll('#content-service')" class="navi-page-item">03 Services <img src="/img/black large.svg" alt=""></a>
+				</li>
+				<li><a href="#content-contact" onclick="slowScroll('#content-contact')" class="navi-page-item">04 <img src="/img/black short.svg" alt=""></a>
+				</li>
+			</ul>
+		</div>
+		<div class="container" id="anchor4">
+			
 			<p> Services</p>
 			<div class="triangle"></div>
 			<div class="content-sevice-text">
@@ -146,7 +187,7 @@
 					<br><br>
 					<img src="/img/strela.png" alt="">
 				</ul>
-				
+
 			</ul>
 			<div class="content-sevice-text-2">
 				Our clients are time constrained and under-resourced. Agendas shift, budgets move and priorities
@@ -157,23 +198,33 @@
 
 	</section>
 	<section id="content-contact">
+		<div class="navigation-page2">
+			<ul>
+				<li><a href="#anchor1" onclick="slowScroll('#anchor1')" class="navi-page-item" id="Home">01 <img src="/img/white large.svg" alt=""></a></li>
+				<li><a href="#content" onclick="slowScroll('#content')" class="navi-page-item">02 <img src="/img/white large.svg" alt=""></a></li>
+				<li><a href="#content-service" onclick="slowScroll('#content-service')" class="navi-page-item">03 <img src="/img/white large.svg" alt=""></a>
+				</li>
+				<li><a href="#content-contact" onclick="slowScroll('#content-contact')" class="navi-page-item">04 Contact <img src="/img/white short.svg" alt=""></a>
+				</li>
+			</ul>
+		</div>
 		<div class="container">
 			<div class="container-contact">
-			<p> Contact</p>
-			<div class="triangle"></div>
-			<div class="content-contact-text">
-				<h1>Email us here: </h1>
-				<h2>info@marvelpowergroup.com</h2>
+				<p> Contact</p>
+				<div class="triangle"></div>
+				<div class="content-contact-text">
+					<h1>Email us here: </h1>
+					<h2>info@marvelpowergroup.com</h2>
+				</div>
 			</div>
-		</div>
 			<br>
 			<div class="form">
 				<h3>
 					Stay in the loop <br>
 					by getting on <br>
-					our mailing lis 
+					our mailing lis
 				</h3>
-<br>
+				<br>
 				<form action="" method="">
 					<input type="text" id="text" placeholder="NAME*">
 					<input type="text" id="text" placeholder="E-MAIL*">
@@ -191,13 +242,10 @@
 
 	<script src="libs/jquery/dist/jquery.min.js"></script>
 	<script src="libs/jquery.fancybox.min.js"></script>
-	<script src="libs/wow.min.js"></script>
 	<link rel="stylesheet" href="fonts/Alata-Regular.ttf">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/adaptive.css">
 	<script src="js/common.js"></script>
-
-
 </body>
 
 </html>

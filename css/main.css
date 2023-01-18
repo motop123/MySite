@@ -141,6 +141,7 @@ header .mnu_top li a:hover {
 
   border-bottom: 3px #F6D330 solid;
 }
+
 header .mnu_top li a:active {
   color: black;
 
@@ -158,28 +159,31 @@ header .mnu_top li a:visited {
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(/img/robert-bye-R-WtV-QyVnY-unsplash.png);
-  position: relative;
   height: 100vh;
   text-align: center;
 }
 
-#main {
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center;
+
+#main .container {
+
+  background-position: bottom;
   background-repeat: no-repeat;
   padding: 150px 0;
+
+  background-image: url(/img/Group\ 200.png);
   position: relative;
+
 }
 
 #main::before {
   content: ' ';
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: linear-gradient(180deg, #000000 4.66%, rgba(0, 0, 0, 0) 76.78%);
+  background: linear-gradient(180deg, #000000 4.66%, rgba(0, 0, 0, 0) 76.78%);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  position: absolute;
 }
 
 #main .inner>h1 {
@@ -321,7 +325,7 @@ header .mnu_top li a:visited {
 }
 
 #content-contact {
-  height: 100vh;
+  height: 74vh;
   background-color: black;
   text-align: left;
   font-family: 'Alata';
@@ -534,4 +538,92 @@ header .mnu_top li a:visited {
 
 .menu__item {
   transition-duration: .25s;
+}
+
+
+
+.navigation-page {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  margin-left: 92%;
+  margin-top: 10%;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+
+  color: black;
+
+}
+
+.navigation-page img {
+  margin-bottom: 5px;
+
+
+}
+
+.navigation-page li {
+  color: black;
+  list-style-type: none;
+  list-style: none;
+  margin-top: 50px;
+}
+
+.navigation-page a {
+  color: black;
+  list-style-type: none;
+  list-style: none;
+}
+
+.navigation-page2 {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  margin-left: 92%;
+  margin-top: 20%;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  z-index: 1;
+  color: #FFFFFF;
+
+}
+
+.navigation-page2 img {
+  margin-bottom: 5px;
+
+
+}
+
+.navigation-page2 li {
+  color: white;
+  list-style-type: none;
+  list-style: none;
+  margin-top: 50px;
+}
+
+.navigation-page2 a {
+  color: white;
+  list-style-type: none;
+  list-style: none;
+}
+
+.scrollmore {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  align-items: center;
+  text-align: center;
+  margin-top: 10vh;
+  color: rgba(255, 255, 255, 0.7);
+  position: relative;
 }
