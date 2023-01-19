@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -158,7 +159,7 @@ header .mnu_top li a:visited {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(/img/robert-bye-R-WtV-QyVnY-unsplash.png);
+  background-image: url('../img/robert-bye-R-WtV-QyVnY-unsplash.png');
   height: 100vh;
   text-align: center;
 }
@@ -170,7 +171,7 @@ header .mnu_top li a:visited {
   background-repeat: no-repeat;
   padding: 150px 0;
 
-  background-image: url(/img/Group\ 200.png);
+  background-image: url('../img/Group\ 200.png');
   position: relative;
 
 }
@@ -456,6 +457,7 @@ header .mnu_top li a:visited {
   width: 100%;
   height: 2px;
   background-color: #616161;
+  
 }
 
 .menu__btn>span::before {
@@ -484,6 +486,7 @@ header .mnu_top li a:visited {
   background-color: #ECEFF1;
   box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
   z-index: 2;
+  opacity: 0.8;
 }
 
 .menu__item img {

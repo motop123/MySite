@@ -1,3 +1,4 @@
+
 $(function() {
 
 	$(".hamburger").click(function(){
@@ -19,3 +20,5 @@ function slowScroll(id) {
 	}, 700);
 	
 } 
+import '../css/adaptive.css';
+import '../css/main.css';
